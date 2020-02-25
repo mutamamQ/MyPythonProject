@@ -20,6 +20,10 @@ def game():
                 break
         else:
             guessCount+= 1
-            print("Wrong. Try again!")
-            continue
+            if guess < x:
+                print("Wrong! Try guessing higher.")
+                continue
+            if guess > x:
+                print("Wrong! Try guessing lower.")
+                continue   
 game()
