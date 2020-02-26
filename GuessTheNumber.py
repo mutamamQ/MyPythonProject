@@ -5,7 +5,13 @@ def game():
     print("I the mainframe have chosen a number between 1-100.\nGuess it to win.")
 
     while True:
-        guess = int(input())
+        #Special Thanks To GamerBruh for fixing my code
+        try:
+            guess = int(input())
+        except:
+            print("numbers buddy numbers")
+            game()
+         #Special Thanks To GamerBruh for fixing my code   
         #Debuging
         if guess == 999:
             print(x)
